@@ -14,7 +14,18 @@ class Piezas
 		
 		bool movimiento(int ,int);
 		bool validarDentro(int, int );
+		char getCaracter();
+		bool getJugador();
+		int getFila();
+		int getColumna();
 		
+		//operador sobrecargado para simplificar el codigo
+		bool operator==(Piezas* pieza){
+			return this->getCaracter()==pieza->getCaracter();
+		}
+		bool operator==(char carac){
+			return this->getCaracter()==carac;
+		}
 		
 		
 		~Piezas();

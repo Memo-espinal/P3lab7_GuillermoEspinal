@@ -7,6 +7,8 @@ class Caballo : public Piezas
 {
 	public:
 		Caballo();
+		bool validar(int,int);
+		Caballo (int,int,Piezas***,bool);
 		~Caballo();
 	protected:
 };

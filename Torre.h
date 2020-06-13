@@ -7,6 +7,9 @@ class Torre : public Piezas
 {
 	public:
 		Torre();
+		Torre(int,int, Piezas***,bool);
+		bool validar(int,int);
+		
 		~Torre();
 	protected:
 };
